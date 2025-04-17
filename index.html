@@ -29,7 +29,7 @@
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
-      height: 60px;
+      height: 50px;
     }
     .mini-logo {
       margin-left: 0.5rem;
@@ -37,7 +37,7 @@
     .mini-logo img {
       height: auto;
       width: auto;
-      max-height: 40px;
+      max-height: 32px;
     }
     .nav-links {
       display: flex;
@@ -156,6 +156,56 @@
     #topBtn:hover {
       background-color: #0891b2;
     }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .game-showcase {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      .game-text, .game-image {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+      }
+
+      .game-text h2 {
+        font-size: 2rem;
+      }
+
+      .game-text p {
+        font-size: 1.2rem;
+      }
+
+      .about, .contact {
+        padding: 1rem;
+      }
+
+      .logo-placeholder img {
+        width: 100%;
+        height: auto;
+      }
+
+      nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.5rem;
+      }
+
+      .mini-logo img {
+        max-height: 32px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -208,8 +258,8 @@
     <h3>Contact & Socials</h3>
     <p>Got questions or just want to say hi? Reach us through our socials:</p>
     <p class="socials">
-      <a href="https://x.com/JiemStudios" target="_blank">X</a>
-      <a href="https://www.youtube.com/@JiemStudios" target="_blank">YouTube</a>
+      <a href="https://x.com" target="_blank">X</a>
+      <a href="https://youtube.com" target="_blank">YouTube</a>
     </p>
   </section>
 
