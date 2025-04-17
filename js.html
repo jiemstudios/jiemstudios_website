@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiem Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: #45293f;
+      color: #fff;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(53, 29, 49, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 0.25rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      height: 60px;
+    }
+    .mini-logo {
+      margin-left: 0.5rem;
+    }
+    .mini-logo img {
+      height: auto;
+      width: auto;
+      max-height: 40px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      margin-right: 0.5rem;
+    }
+    .nav-links a {
+      color: #06b6d4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section, header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header {
+      background: #a78bfa;
+      color: white;
+      font-family: 'Fredoka One', cursive;
+      padding-top: 6rem;
+    }
+    .logo-placeholder img {
+      width: 1280px;
+      height: 720px;
+      object-fit: contain;
+    }
+    .screenshots {
+      flex-direction: column;
+      gap: 4rem;
+      width: 100%;
+    }
+    .game-showcase {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+    }
+    .game-text {
+      flex: 1;
+      padding: 2rem;
+      text-align: left;
+    }
+    .game-text h2 {
+      font-size: 2.5rem;
+      color: #a78bfa;
+    }
+    .game-text p {
+      font-size: 1.5rem;
+      color: #06b6d4;
+    }
+    .game-image {
+      flex: 1;
+      max-width: 500px;
+    }
+    .game-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+    .about, .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+    .about h3, .contact h3 {
+      color: #06b6d4;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about p, .contact p {
+      font-size: 1.1rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #06b6d4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+      background-color: #06b6d4;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+    }
+    #topBtn:hover {
+      background-color: #0891b2;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="mini-logo">
+      <img src="assets/js_f.png" alt="Mini Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="top">
+    <div class="logo-placeholder">
+      <!-- Replace with your actual logo image -->
+      <img src="assets/jsb.png" alt="Jiem Studios Logo">
+    </div>
+  </header>
+
+  <section class="screenshots" id="games">
+    <div class="game-showcase">
+      <div class="game-text">
+        <h2>Uncontrolevel</h2>
+        <p>Coming Soon</p>
+      </div>
+      <div class="game-image">
+        <img src="assets/title.png" alt="Uncontrolevel">
+      </div>
+    </div>
+
+    <div class="game-showcase">
+      <div class="game-text">
+        <h2>Mercy Not Found</h2>
+        <p>Coming Soon</p>
+      </div>
+      <div class="game-image">
+        <img src="assets/title_r.png" alt="Mercy Not Found">
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h3>About</h3>
+    <p>Jiem Studios is an indie game studio run by me, Jiem—a gamer just like you. I create games that I genuinely love to play, and I hope you’ll love them too.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Contact & Socials</h3>
+    <p>Got questions or just want to say hi? Reach us through our socials:</p>
+    <p class="socials">
+      <a href="https://x.com" target="_blank">X</a>
+      <a href="https://youtube.com" target="_blank">YouTube</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Jiem Studios. All rights reserved.
+  </footer>
+
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+  <script>
+    const topBtn = document.getElementById("topBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
